@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator kosztów wyjazdu</title>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+<h1>Kalkulator kosztów</h1>
+<p class="subheading">Wspólny wyjazd bez ukrytych kosztów</p>
+        </header>
+        <main class="bottom">
+            <label for="price">Całkowity koszt noclegu</label>
+            <input type="number" min="1" id="price">
+<br>
+            <label for="people">Liczba osób</label>
+            <input type="number" min="2" id="people">
+<br>
+            <label for="tip">Wydatki na jedzenie
+                <br>
+                <span class="tip-info">Koszty orientacyjne</label>
+            
+            <select id="tip">
+            <option value="0" disabled selected> -- Wybierz opcję --</option>
+            <option value="0.05">Pełne wyżywnienie w cenie noclegu</option>
+            <option value="0.1">Śniadania w cenie noclegu</option>
+            <option value="0.2">Kupimy jedzenie w sklepie na miejscu</option>
+            <option value="0.35">Będziemy jeść w restauracjach</option>
+        </select>
+        <button class="count">Oblicz</button>
+        <br>
+        <p class="error">Brak wystarczających danych</p>
+        <br><br>
+        <p class="info">Musicie zapłacić:<br> <span class="result"></span><br>zł/osobę</p>
+        </main>
+    </div>
+    <script src="./script/main.js"></script>
+</body>
+</html>

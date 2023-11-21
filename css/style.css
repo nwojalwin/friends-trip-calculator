@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(77, 77, 77);
+  font-family: "Lato", sans-serif;
+}
+.container {
+  width: 50vw;
+  min-height: 50vh;
+  background-color: white;
+  box-shadow: 5px 5px 15px gray;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+header {
+  background-color: green;
+  width: 100%;
+  padding: 40px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+header h1,
+header p {
+  padding: 5px;
+}
+.bottom {
+  padding: 40px;
+}
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+input,
+select {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+label[for="tip"] {
+  border-bottom: 2px dotted green;
+  width: fit-content;
+  padding: 2px;
+  position: relative;
+}
+.tip-info {
+  display: none;
+}
+
+label[for="tip"]:hover .tip-info {
+  display: flex;
+  position: absolute;
+right:-20px;
+font-size: 0.7em;
+background-color: rgba(68, 74, 68, 0.7);
+color: white;
+padding: 5px;
+
+}
+.count {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+margin:1rem;
+}
+.info {
+  padding: 5px;
+}
+.error {
+  padding: 5px;
+  display: none;
+  text-transform: uppercase;
+}
+.result {
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 576px){
+  main, header{
+    font-size: 14px;
+  }
+  .container {
+    min-width: 90vw;
+  }
+}
+@media (max-width: 768px){
+  .container {
+    min-width: 50vw;
+
+  }
+}
+@media (max-width: 992px){
+  .container {
+    min-width: 50vw;
+
+  }
+}
+
