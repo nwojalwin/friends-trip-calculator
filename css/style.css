@@ -15,9 +15,9 @@ body {
   width: 50vw;
   min-height: 50vh;
   background-color: white;
-  box-shadow: 5px 5px 15px gray;
+  box-shadow: 0px 0px 50px gray;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 header {
   background-color: green;
@@ -60,12 +60,11 @@ label[for="tip"] {
 label[for="tip"]:hover .tip-info {
   display: flex;
   position: absolute;
-right:-20px;
-font-size: 0.7em;
-background-color: rgba(68, 74, 68, 0.7);
-color: white;
-padding: 5px;
-
+  right: -20px;
+  font-size: 0.7em;
+  background-color: rgba(68, 74, 68, 0.7);
+  color: white;
+  padding: 5px;
 }
 .count {
   padding: 10px;
@@ -73,7 +72,7 @@ padding: 5px;
   color: white;
   text-transform: uppercase;
   border-radius: 5px;
-margin:1rem;
+  margin: 1rem;
 }
 .info {
   padding: 5px;
@@ -88,24 +87,29 @@ margin:1rem;
   font-weight: bold;
 }
 
-@media (max-width: 576px){
-  main, header{
+@media (max-width: 576px) {
+  main,
+  header {
     font-size: 14px;
   }
+  h1 {
+    font-size: medium;
+  }
   .container {
-    min-width: 90vw;
+    width: 100%;
+    margin: 20px;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .container {
-    min-width: 50vw;
-
+    width: 80%;
+    margin: 40px;
   }
 }
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .container {
-    min-width: 50vw;
-
+    width: 80%;
+    margin: 40px;
+    font-size: larger;
   }
 }
-
